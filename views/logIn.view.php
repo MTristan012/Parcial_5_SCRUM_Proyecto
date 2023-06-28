@@ -21,7 +21,7 @@ if (empty($_SESSION["id"])) {
     <main class="d-flex justify-content-center">
         <section style="max-width: 22em;" class="mt-4">
             <div class="d-flex justify-content-center my-3">
-                <img src="../imagen/FUNVAL.jpg" alt="logo" width="55%">
+                <img src="../imagen/FUNVAL LOGO 2023.png" alt="logo" width="55%">
             </div>
             <form class="card bg-white p-3 shadow-sm mt-3 rounded-0" method="post">
                 <p class="text-center px-3 pb-3">Bienvenido Ingresa con tu cuenta</p>

@@ -14,15 +14,15 @@ if (empty($_SESSION["id"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <title>University</title>
+    <title> FUNVAL INTERNACIONAL </title>
 </head>
 
 <body>
     <main class="d-flex">
         <aside class="d-flex flex-column flex-shrink-0 p-3 vh-100" style="background-color: #343a40;">
             <a href="./main.view.php" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none" style="color:#bec3cc">
-                <img src="../imagen/FUNVAL.jpg" alt="logo" class="rounded-circle" width="35rem">
-                <span class="fs-5 ms-2">Universidad</span>
+                <img src="../imagen/FUNVAL LOGO 2023.png" alt="logo" class="rounded-circle" width="35rem">
+                <span class="fs-5 ms-2"> FUNVAL </span>
             </a>
             <hr class="text-secondary">
             <div style="color:#bec3cc;">

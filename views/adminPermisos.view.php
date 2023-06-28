@@ -24,7 +24,7 @@ if (empty($_SESSION["id"])) {
     <main class="d-flex">
         <aside class="d-flex flex-column flex-shrink-0 p-3 vh-100" style="background-color: #343a40;">
             <a href="./main.view.php" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none" style="color:#bec3cc">
-                <img src="../imagen/FUNVAL.jpg" alt="logo" class="rounded-circle" width="35rem">
+                <img src="../imagen/FUNVAL LOGO 2023.png" alt="logo" class="rounded-circle" width="35rem">
                 <span class="fs-5 ms-2"> FUNVAL </span>
             </a>
             <hr class="text-secondary">

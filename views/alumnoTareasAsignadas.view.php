@@ -27,13 +27,7 @@ if (empty($_SESSION["id"])) {
             <hr class="text-secondary">
             <div style="color:#bec3cc;">
                 <?php
-                if ($_SESSION['permiso'] == 1) {
-                    echo "<p class='m-0 p-0' style='font-size:1.2rem;'>Administrador</p>";
-                } else if ($_SESSION['permiso'] == 2) {
-                    echo "<p class='m-0 p-0' style='font-size:1.2rem;'>Maestro</p>";
-                } else {
-                    echo "<p class='m-0 p-0' style='font-size:1.2rem;'>Alumno</p>";
-                }
+                echo "<p class='m-0 p-0' style='font-size:1.2rem;'>Alumno</p>";
                 echo "<p class='m-0 p-0'>" . $_SESSION['nombre'] . "</p>";
                 ?>
             </div>
@@ -105,16 +99,13 @@ if (empty($_SESSION["id"])) {
             </header>
             <section style="background-color: #f4f6f9; height:90%;" class="m-0">
                 <div class="d-flex justify-content-between">
-                    <h2 class="ms-2">Calificaciones y mensajes de tus clases</h2>
-                    <p class="me-2 my-auto"><a href="./main.view.php">Home</a> / Calificaciones</p>
+                    <h2 class="ms-2">Tareas asignadas</h2>
+                    <p class="me-2 my-auto"><a href="./main.view.php">Home</a> / Clases</p>
                 </div>
-                <div class="card shadow-sm mx-3">
-                    <div class="card-body">
-                        <p class="my-0">Bienvenido</p>
-                        <p class="my-0">Seleciona la accion que quieras realizar en las pestañas del menu de las izquierda</p>
-                    </div>
-                </div>
-
+                <div class="d-flex gap-3 mx-2">
+                    <?php
+                    include("../sources/srcAlumnoTareas.php");
+                    ?>
             </section>
             <footer>
                 <div class=" border d-flex justify-content-between align-items-center m-0 p-0">

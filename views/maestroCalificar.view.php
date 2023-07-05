@@ -41,11 +41,11 @@ if (empty($_SESSION["id"])) {
                         <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/><path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
                         </svg></span> Alumnos</a></p>';
                 echo '<p><a href="./maestroTarea.view.php" type="button" class="btn btn-outline-dark border-0" style="color:#bec3cc;"><span class="mx-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
-                        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/><path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
-                        </svg></span> Tareas/Examenes</a></p>';
+                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/><path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                </svg></span> Tareas/Examenes</a></p>';
                 echo '<p><a href="./maestroCalificar.view.php" type="button" class="btn btn-outline-dark border-0" style="color:#bec3cc;"><span class="mx-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
-                        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/><path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
-                        </svg></span> Calificar</a></p>';
+                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/><path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                </svg></span> Calificar</a></p>';
                 ?>
             </div>
         </aside>
@@ -98,7 +98,7 @@ if (empty($_SESSION["id"])) {
                 <div class="d-flex justify-content-between">
                     <h2 class="ms-2">
                         <?php
-                        echo "Alumnos de la Clase de " . $_SESSION["claseAsignada"];
+                        echo "Calificar Tareas/Examenes de la Clase de " . $_SESSION["claseAsignada"];
                         ?>
                     </h2>
                     <p class="me-2 my-auto">
@@ -110,11 +110,41 @@ if (empty($_SESSION["id"])) {
                 </div>
                 <div class="card shadow-sm mx-3">
                     <div class="card-header d-flex justify-content-between">
-                        <div class="my-auto">Información de Alumnos</div>
+                        <div class="my-auto">Calificar Tareas</div>
+                        <div>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar Clase</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <form method="POST" action="../controller/ctrlrAdminCursosNuevo.php">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Asignacion</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Nombre de la Materia</label>
+                                                    <input type="text" class="form-control" name="inputAdminNombreCurso">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <?php
+                                                    include "../sources/srcAdminCursosMaestros.php"
+                                                    ?>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <input type="submit" class="btn btn-primary" value="Crear" name="inputAdminButtonCurso"></input>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-body">
                         <?php
-                        include "../sources/srcMaestroAlumnos.php";
+                        include "../sources/srcMaestroCalificar.php";
                         ?>
                     </div>
                 </div>
@@ -122,7 +152,7 @@ if (empty($_SESSION["id"])) {
             <footer>
                 <div class=" border d-flex justify-content-between align-items-center m-0 p-0">
                     <p class="my-3 ps-2">Created by <span><a href=" https://github.com/MTristan012">MTristan012</a></span></p>
-                    <p class="my-3 pe-2">Anything you want</p>
+                    <p class="my-3 ps-2">Proyecto SCRUM</p>
                 </div>
             </footer>
         </section>

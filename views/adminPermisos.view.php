@@ -97,7 +97,7 @@ if (empty($_SESSION["id"])) {
             </section>
             <footer>
                 <div class=" border d-flex justify-content-between align-items-center m-0 p-0">
-                    <p class="my-3 ps-2">Created by <span><a href=" https://github.com/MTristan012">MTristan012</a></span></p>
+                    <p class="my-3 ps-2">Proyecto SCRUM</p>
                     <p class="my-3 pe-2">Anything you want</p>
                 </div>
             </footer>

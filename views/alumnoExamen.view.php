@@ -99,12 +99,12 @@ if (empty($_SESSION["id"])) {
             </header>
             <section style="background-color: #f4f6f9; height:90%;" class="m-0">
                 <div class="d-flex justify-content-between">
-                    <h2 class="ms-2">Tareas asignadas</h2>
+                    <h2 class="ms-2">Examen asignado</h2>
                     <p class="me-2 my-auto"><a href="./main.view.php">Home</a> / Clases</p>
                 </div>
                 <div class="d-flex gap-3 mx-2">
                     <?php
-                    include("../sources/srcAlumnoTareas.php");
+                    include("../sources/srcAlumnoExamen.php");
                     ?>
             </section>
             <footer>

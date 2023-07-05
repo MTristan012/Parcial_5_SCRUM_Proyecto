@@ -113,29 +113,30 @@ if (empty($_SESSION["id"])) {
                     <div class="card-header d-flex justify-content-between">
                         <div class="my-auto">Asignar Tareas</div>
                         <div>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar Clase</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar Asignacion</button>
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
-                                        <form method="POST" action="../controller/ctrlrAdminCursosNuevo.php">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Clase</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
+                                        <form method="POST" action="../controller/ctrlrMaestroTareaAgregar">
                                             <div class="modal-body">
                                                 <div class="mb-3">
-                                                    <label class="form-label">Nombre de la Materia</label>
-                                                    <input type="text" class="form-control" name="inputAdminNombreCurso">
+                                                    <label for="exampleInputAssig" class="form-label">Nombre de la Asignacion</label>
+                                                    <input type="name" class="form-control" id="asig" aria-describedby="asigHelp" name="inputMaestroTareaNombre">
+                                                    <div id="emailHelp" class="form-text"></div>
                                                 </div>
                                                 <div class="mb-3">
-                                                    <?php
-                                                    include "../sources/srcAdminCursosMaestros.php"
-                                                    ?>
+                                                    <label for="exampleurl" class="form-label">Inserte URL</label>
+                                                    <input type="url" class="form-control" id="exampleInputUrl" aria-describedby="urlHelp" name="inputMaestroTareaURL">
+                                                    <div id="emailHelp" class="form-text"></div>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" name="inputMaestroTareaTipo">
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">Activar para Examen</label>
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                <input type="submit" class="btn btn-primary" value="Crear" name="inputAdminButtonCurso"></input>
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                <input type="submit" class="btn btn-primary" value="Guardar Cambios" name="buttonMaestroTarea"></input>
                                             </div>
                                         </form>
                                     </div>
